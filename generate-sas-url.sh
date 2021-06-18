@@ -3,6 +3,14 @@ green="\e[0;92m"
 bold="\e[1m"
 reset="\e[0m"
 
+echo -e "${green}${bold}"
+echo -e "================================================================================================================================================="
+echo -e "This script generates a SAS URL for a VHD file located in the 'vhds' container of a storage account."
+echo -e "You have to provide the Storage Account name and the VHD file name."
+echo -e "The SAS URL will be valid for 7 days"
+echo -e "This script requires the Azure CLI. Please see https://aka.ms/azcli for details"
+echo -e "================================================================================================================================================="
+echo -e "${reset}"
 
 echo "Please enter the source VHD storage account name"
 read sourceStorageAccountName
